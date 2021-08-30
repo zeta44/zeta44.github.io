@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icone Janela -->
+  <link href="assets/img/favicon.png" rel="icon">
+  
+  <!-- frame_libs CSS -->
+  <link href="assets/frame_libs/aos/aos.css" rel="stylesheet">
+  <link href="assets/frame_libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/frame_libs/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/frame_libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/frame_libs/icofont/icofont.min.css" rel="stylesheet">
+
+  <!-- Css principal -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Contato</title>
+</head>
+
+<body>
+  <section id="container" class="container-fluid">
+    <header data-aos="fade-right">
+      <article class="row bg-pink">
+        <article id="menutop" class="col-12">
+          <!-- Nav Bar -->
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" id="logo_topo" href="index.html"><span class="text-success">Green</span><span
+                class="text-danger">Food</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+              aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <article class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre.html">Quem somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="parceiros.html">Parceiros</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+            </article>
+          </nav>
+        </article>
+
+      </article>
+
+    </header>
+    <!-- ///////////////////////////////////////////// INÍCIO DO INNER HTML //////////////////////////////////////////////////////////////// -->
+    <main>
+      <!-- ======= Contato ======= -->
+      <section id="contato" class="contato my-5">
+        <article class="container">
+          <article class="row ">
+            <article class="col-lg-4" data-aos="fade-right">
+              <article class="section-title">
+                <h2>Contato</h2>
+                <p>Venham conhecer nossa cozinha.</p>
+                <p>Ou nos envie uma mensagem.</p>
+              </article>
+            </article>
+
+            <article class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.310864001201!2d-38.49870698542193!3d-3.742295997277329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7488f9b1b4faf%3A0xff0ff2717bc5ee2a!2sR.%20Carolina%20Sucupira%20-%20Fortaleza%2C%20CE%2C%20Brasil!5e0!3m2!1spt-BR!2snl!4v1630163726569!5m2!1spt-BR!2snl"
+                frameborder="0" allowfullscreen></iframe>
+
+              <article class="info mt-4">
+                <i class="icofont-map"></i>
+                <h4>Endereço:</h4>
+                <p>Rua Carolina Sucupira, 000, Fortaleza, Ceará</p>
+              </article>
+              <article class="row">
+                <article class="col-lg-6 mt-4">
+                  <article class="info">
+                    <i class="icofont-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>contato@greenfood.com</p>
+                  </article>
+                </article>
+                <article class="col-lg-6">
+                  <article class="info w-100 mt-4">
+                    <i class="icofont-phone"></i>
+                    <h4>Fone:</h4>
+                    <p>(85) 5555 - 5555</p>
+                  </article>
+                </article>
+              </article>
+
+              <form class="form-contato mt-4">
+                <article id="center" class="text-success my-4">
+                  <article class="form-row">
+                    <article class="col-md-6 form-group">
+                      <input id="nome" type="text" class="form-control" id="name" placeholder="Seu Nome"
+                        onblur="valida_nome(this)" onkeyup="maiuscula(this)" title="Informar o seu nome." />
+
+                    </article>
+                    <article class="col-md-6 form-group">
+                      <input type="text" class="form-control" id="email" placeholder="Seu E-mail"
+                        onblur="valida_email(this)" title="Informar seu E-mail." />
+
+                    </article>
+                  </article>
+                  <article class="form-group">
+                    <input id="assunto" type="text" class="form-control" id="name" placeholder="Assunto"
+                      onblur="valida_assunto(this)" onkeyup="maiuscula(this)" title="Informar o assunto." />
+
+                  </article>
+                  <article class="form-group">
+                    <textarea id="mensagem" class="form-control" rows="5" data-rule="required" placeholder="Mensagem"
+                      onblur="valida_mensagem(this)"></textarea>
+
+                  </article>
+
+
+                  <article id="dialog_erro" class="alert alert-warning alert-dismissible fade show text-center" role="alert"
+                    style="display: none;">
+                    <p>
+                      Por favor, verifique os campos em vermelho e tente novamente.
+                    </p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </article>
+                  <article id="dialog_sucesso" class="alert alert-success alert-dismissible fade show text-center"
+                    role="alert" style="display: none;">
+                    <p>
+                      Mensagem enviada com sucesso. Entraremos em contato em breve.
+                    </p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="refre">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </article>
+
+                  <article class="text-center">
+                    <button type="button" class="btn btn-success" onclick="enviar_dados()">Enviar Mensagem</button>
+
+                  </article>
+                </article>
+              </form>
+
+            </article>
+          </article>
+
+        </article>
+      </section><!-- Fim contato -->
+
+    </main>
+    <!-- ///////////////////////////////////////////// FIM DO INNER HTML /////////////////////////////////////////////////////////////////// -->
+  </section>
+
+
+  <article>
+    <a href="#" id="botao_subir" data-aos="swiper-slide"
+      class="btn subir d-flex align-items-center justify-content-center text-center"><i>&#9650;</i></a>
+  </article>
+
+
+  <!-- Libras Section -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+
+
+  <!-- frame_libs JS -->
+  <script src="assets/frame_libs/jquery/jQuery_3.6.0.js"></script>
+  <script src="assets/frame_libs/aos/aos.js"></script>
+  <script src="assets/frame_libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/frame_libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/frame_libs/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/frame_libs/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- JS personal -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cadastro.js"></script>
+
+</body>
+<footer>
+  <section class="footer">
+    <article class="footer-left">
+      <h4>Contate-nos</h4>
+      <p>
+        Rua Sucupira, 2110 <br>
+        Fortaleza - CE<br>
+        Brasil <br>
+        <strong>Fone:</strong>(85) 5555 -5555<br>
+        <strong>Email:</strong> info@example.com<br>
+      </p>
+
+    </article>
+    <article class="footer-right">
+      <h4>Mídias Sociais</h4>
+      <ul>
+        <a href="http://www.facebook.com.br" target="_blank"><img src="assets/img/social/facebook.png"
+            alt="facebook"></a>
+        <a href="http://www.instagram.com.br" target="_blank"><img src="assets/img/social/instagram.png"
+            alt="instagram"></a>
+        <a href="http://twitter.com/" target="_blank"><img src="assets/img/social/twitter.png" alt="twitter"></a>
+      </ul>
+
+    </article>
+
+  </section>
+  <section class="footer-center">
+    <strong>GreenFood</strong>. &copy; Copyright - All Rights Reserved
+  </section>
+</footer>
+
+</html>
